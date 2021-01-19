@@ -2,7 +2,6 @@ import Search from "./Search";
 import SmallCard from "./SmallCard";
 import Title from "./Title";
 import Paper from "@material-ui/core/Paper";
-import Typography from "@material-ui/core/Typography";
 import {
   createMuiTheme,
   responsiveFontSizes,

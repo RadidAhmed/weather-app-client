@@ -49,18 +49,15 @@ class Search extends React.Component {
   };
 
   getLoc(address) {
-    console.log("test");
     let adr = {
       local: "",
       state_name: "",
       country: "",
     };
-    console.log("test");
+
     let i;
     for (i = 0; i < address.length; i++) {
-      console.log("test");
       let curr = address[i];
-      console.log("test");
       let j;
       for (j = 0; j < curr.types.length; j++) {
         console.log("test");
@@ -85,7 +82,10 @@ class Search extends React.Component {
       },
       body: JSON.stringify(data),
     };
-    const response = await fetch("https://polar-mountain-13399.herokuapp.com/location", options);
+    const response = await fetch(
+      "https://polar-mountain-13399.herokuapp.com/location",
+      options
+    );
     const json = await response.json();
     this.setState({ data: json });
     console.log(this.state.data);
