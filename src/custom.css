@@ -1,0 +1,55 @@
+.zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    
+}
+.landingpage {
+   
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.comp:hover {
+    transform: scale(1.01);
+}
+
+body{
+    margin: 0px;
+    background-color:#3f51b5;
+    ;
+}
+
+
+.grid {
+    display: grid;
+    grid-gap: 8px;
+    justify-self: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-rows: 1fr;
+}
+
+
+.box{
+
+    width: 960px;
+
+}
+
+.app{
+    width: 960px;
+    height: 540px
+}
+
+@media screen and (max-width: 960px) {
+    .box{
+        width: 100vw
+    }
+    .app{
+        width: 100vw
+    }
+}
