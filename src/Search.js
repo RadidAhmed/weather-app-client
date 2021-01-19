@@ -85,7 +85,7 @@ class Search extends React.Component {
       },
       body: JSON.stringify(data),
     };
-    const response = await fetch("http://localhost:3001/location", options);
+    const response = await fetch("https://polar-mountain-13399.herokuapp.com/", options);
     const json = await response.json();
     this.setState({ data: json });
     console.log(this.state.data);
