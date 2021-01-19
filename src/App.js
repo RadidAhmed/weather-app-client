@@ -2,6 +2,7 @@ import Search from "./Search";
 import SmallCard from "./SmallCard";
 import Title from "./Title";
 import Paper from "@material-ui/core/Paper";
+import Typography from "@material-ui/core/Typography";
 import {
   createMuiTheme,
   responsiveFontSizes,
@@ -59,11 +60,7 @@ class App extends React.Component {
     this.setState({ location: loc });
   };
 
-  componentDidUpdate(e) {
-    if (this.state.data != null) {
-      console.log("yoo this shit is working bro");
-    }
-  }
+
   render() {
     if (this.state.data != null) {
       return (
@@ -71,6 +68,9 @@ class App extends React.Component {
           <Paper elevation={0}>
             <div className="zone">
               <Title />
+              <Typography color="textPrimary">
+           Made by Radid Ahmed
+          </Typography>
               <Search getLocation={this.getLocation} />
             </div>
             <div>

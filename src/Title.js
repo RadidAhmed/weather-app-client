@@ -7,6 +7,7 @@ export default function Title() {
       <Typography color="textPrimary" variant="h1">
         The Weather App
       </Typography>
+     
     </div>
   );
 }
