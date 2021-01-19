@@ -7,7 +7,7 @@ export default function Title() {
       <Typography color="textPrimary" variant="h1">
         The Weather App
       </Typography>
-     
+      <Typography className='zone'>Made by Radid Ahmed </Typography>
     </div>
   );
 }

@@ -68,9 +68,7 @@ class App extends React.Component {
           <Paper elevation={0}>
             <div className="zone">
               <Title />
-              <Typography color="textPrimary">
-           Made by Radid Ahmed
-          </Typography>
+
               <Search getLocation={this.getLocation} />
             </div>
             <div>
