@@ -62,7 +62,7 @@ class SmallCard extends React.Component {
         </Typography>
         <img
           src={this.getImage(data.weather_id)}
-          alt="Italian Trulli"
+          alt="Weather Image"
           style={{ minWidth: 50, maxWidth: 60 }}
         />
         <Typography variant="h4">{data.temp}°</Typography>

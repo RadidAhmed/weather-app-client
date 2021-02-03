@@ -62,7 +62,7 @@ class MainCard extends React.Component {
           </Typography>
           <img
             src={this.getImage(data[0].weather_id)}
-            alt="Italian Trulli"
+            alt="Weather Image"
             style={{ minWidth: 50, maxWidth: 160, paddingRight: 30 }}
           />
           <Typography className={classes.cards} variant="h3">
