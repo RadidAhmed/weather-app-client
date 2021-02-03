@@ -59,7 +59,6 @@ class App extends React.Component {
     this.setState({ location: loc });
   };
 
-
   render() {
     if (this.state.data != null) {
       return (

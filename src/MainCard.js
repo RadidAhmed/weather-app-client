@@ -33,9 +33,6 @@ class MainCard extends React.Component {
       const sunrise = new Date(weather.sr * 1000).getHours();
       const sunset = new Date(weather.ss * 1000).getHours();
       const current = new Date(weather.time * 1000).getHours();
-      console.log(sunrise);
-      console.log(sunset);
-      console.log(current);
       if (current >= sunrise && current < sunset) {
         return "/images/sun.png";
       } else {

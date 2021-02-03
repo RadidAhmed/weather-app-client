@@ -22,9 +22,6 @@ class SmallCard extends React.Component {
       const sunrise = new Date(this.props.current[0].sr * 1000).getHours();
       const sunset = new Date(this.props.current[0].ss * 1000).getHours();
       const current = new Date(weather.time * 1000).getHours();
-      console.log(sunrise);
-      console.log(sunset);
-      console.log(current);
       if (current >= sunrise && current < sunset) {
         return "/images/sun.png";
       } else {
@@ -57,7 +54,6 @@ class SmallCard extends React.Component {
 
   render() {
     const { classes, data, current } = this.props;
-    console.log("this is data ", data);
     return (
       <Grow in={true}>
       <Card className={classes.root} elevation={10}>

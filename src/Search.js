@@ -60,7 +60,7 @@ class Search extends React.Component {
       let curr = address[i];
       let j;
       for (j = 0; j < curr.types.length; j++) {
-        console.log("test");
+
         if (curr.types[j] === "locality") adr.local = curr.long_name + ", ";
         if (curr.types[j] === "country") adr.country = curr.long_name;
         if (curr.types[j] === "administrative_area_level_1")
@@ -88,7 +88,6 @@ class Search extends React.Component {
     );
     const json = await response.json();
     this.setState({ data: json });
-    console.log(this.state.data);
     this.getLocation(this.state.data, loc);
   }
 
